@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dev World</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+        function toggleMenu() {
+            document.querySelector(".menu").classList.toggle("active");
+            document.querySelector(".menu-toggle").classList.toggle("menu_position")
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Dev World</h2>
+            </div>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="text" placeholder="Search" />
+                <button class="btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Content and Form Section -->
+        <div class="container-and-form">
+            <div class="container">
+
+                <div class="content">
+                    <h1>Web Design & <br /><span>Development</span> <br />Course </h1>
+                    <p class="par">Web design and development is the foundation of creating engaging, user-friendly, and
+                        visually appealing websites. It involves front-end design, focusing on layout, colors,
+                        typography,
+                        and user experience, and back-end development, which ensures functionality, security, and
+                        database
+                        management.
+                    </p>
+                    <button class="cn"><a href="#">JOIN US</a></button>
+                </div>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Please enter an email">
+                    <input type="password" name="password" placeholder="Please enter a password">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account?</p>
+                    <div class="text-center"><a class="signup" href="#"><span>Sign up</span> here</a></div>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
